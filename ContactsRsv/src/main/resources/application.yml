@@ -1,0 +1,21 @@
+server:
+  port: 7070
+ 
+spring:
+  mvc:
+    view:
+      prefix: /views/
+      suffix: .jsp
+  datasource: 
+    driver-class-name:  oracle.jdbc.OracleDriver
+    url:  jdbc:oracle:thin:@localhost:1521/XE
+    username: nxt
+    password: nxt
+       
+  jpa:  
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true 
+        ddl-auto: create
+        dialect: org.hibernate.dialect.Oracle10gDialect
